@@ -367,8 +367,8 @@ p {
   transition: all 100ms ease;
   font-family: 'Itcavantgardepro xlt', sans-serif;
   color: #ff5c4d;
-  font-size: 6vh;
-  line-height: 6vh;
+  font-size: 3.5vw;
+  line-height: 3.25vw;
   font-weight: 200;
   letter-spacing: -0.04em;
   text-decoration: none;
@@ -380,10 +380,8 @@ p {
 
 .speaker-lastname {
   display: block;
-  margin-top: 1.5vh;
-  margin-bottom: 0px;
   font-family: 'Itcavantgardepro demi', sans-serif;
-  line-height: 3vh;
+  line-height: 3.5vw;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
