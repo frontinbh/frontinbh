@@ -69,9 +69,6 @@ html.w-mod-touch * {
 .w-clearfix:after {
   clear: both;
 }
-.w-preserve-3d {
-  transform-style: preserve-3d;
-}
 .w-hidden {
   display: none;
 }
@@ -1385,8 +1382,7 @@ textarea.w-select {
   position: relative;
   max-width: 60%;
 }
-.w-richtext figure > div:before,
-.w-richtext figure img {
+.w-richtext figure > div:before {
   cursor: default!important;
 }
 .w-richtext figure img {
