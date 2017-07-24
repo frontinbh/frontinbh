@@ -383,7 +383,7 @@ a {
   transition: all 100ms ease;
   font-family: 'Itcavantgardepro xlt', sans-serif;
   color: #ff5c4d;
-  font-size: 3.2vw;
+  font-size: 3vw;
   line-height: 3vw;
   font-weight: 200;
   letter-spacing: -0.04em;
@@ -397,7 +397,7 @@ a {
 .speaker-lastname {
   display: block;
   font-family: 'Itcavantgardepro demi', sans-serif;
-  line-height: 3vw;
+  line-height: 2.25vw;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -487,7 +487,7 @@ a {
   display: none;
   width: 100%;
   height: 100%;
-  background-image: url('../images/matheus.jpg');
+  background-image: url('../images/guilherme.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -590,7 +590,7 @@ a {
   display: flex;
   width: 50%;
   height: 100%;
-  max-height: 950px;
+  max-height: 850px;
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 5vh;
@@ -727,7 +727,7 @@ a {
   display: none;
   width: 100%;
   height: 100%;
-  background-image: url('../images/matheus.jpg');
+  background-image: url('../images/guilherme.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -826,10 +826,12 @@ a {
   display: none;
   width: 100%;
   height: 100%;
-  background-image: url('../images/about.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 5vh;
+  background-image: -webkit-linear-gradient(270deg, #000, transparent 50%), url('../images/about.jpg');
+  background-image: linear-gradient(180deg, #000, transparent 50%), url('../images/about.jpg');
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .about-content {
@@ -839,11 +841,9 @@ a {
   right: 0px;
   bottom: 0px;
   display: none;
-  max-height: 660px;
   margin-top: auto;
   margin-bottom: auto;
-  padding-right: 5vh;
-  padding-left: 5vh;
+  padding: 5vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -853,6 +853,7 @@ a {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  background-color: #341496;
 }
 
 .text-link {
@@ -1059,22 +1060,46 @@ a {
   margin-bottom: 40px;
 }
 
-.m-sponsor-wrapper {
-  margin-bottom: 40px;
-}
-
-.m-sponsor-gold {
+.m-sponsor {
   width: 50%;
-  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 6%;
 }
 
 .m-sponsor-partner {
   width: 33.333%;
-  padding-right: 20px;
+  margin-bottom: 20px;
+  padding-right: 6%;
 }
 
-.sponsor-gold {
-  width: 150px;
+.sponsor {
+  margin-right: 7%;
+  margin-bottom: 5%;
+}
+
+.sponsor.toptal {
+  width: 12%;
+}
+
+.sponsor.avenue {
+  width: 10.5%;
+}
+
+.sponsor.hotmart {
+  width: 30%;
+}
+
+.sponsor.loadsmart {
+  width: 30%;
+}
+
+.sponsor.vtex {
+  width: 23%;
+}
+
+.sponsor.sympla {
+  width: 16%;
 }
 
 .sponsor-wrapper {
@@ -1082,6 +1107,12 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -1090,48 +1121,56 @@ a {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .sponsor-container {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
+.sponsor-container.partner {
+  margin-bottom: 0%;
+  border-bottom-style: none;
+}
+
 .sponsor-partner {
   width: 100px;
-  margin-right: 30px;
+  margin-right: 5%;
 }
 
 .sponsor-partner.wedeploy {
-  width: 90px;
+  width: 8%;
+  margin-top: 0.5%;
 }
 
 .sponsor-partner.bunee {
-  width: 75px;
+  width: 7%;
 }
 
 .sponsor-partner.braziljs {
-  width: 50px;
+  width: 5%;
 }
 
 .sponsor-partner.zeit {
-  width: 40px;
+  width: 35px;
   margin-right: 0px;
 }
 
@@ -1334,8 +1373,7 @@ a {
 }
 
 .sponsor-title {
-  position: absolute;
-  top: -40px;
+  margin-bottom: 0px;
 }
 
 .speaker-preview-8 {
@@ -1426,6 +1464,21 @@ a {
   padding-left: 5vh;
 }
 
+.divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 5%;
+  background-color: #5c00d8;
+}
+
+.m-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #5c00d8;
+}
+
 @media (max-width: 991px) {
   .m-header {
     display: -webkit-box;
@@ -1437,29 +1490,44 @@ a {
     font-size: 12vw;
   }
   .m-sponsor-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
   }
-  .m-sponsor-gold {
+  .m-sponsor {
     width: 33.333%;
+  }
+  .m-sponsor.toptal {
+    width: 21%;
+  }
+  .m-sponsor.loadsmart {
+    width: 42%;
+  }
+  .m-sponsor.sympla {
+    width: 27%;
+  }
+  .m-sponsor.vtex {
+    width: 31%;
+  }
+  .m-sponsor.hotmart {
+    width: 40%;
+  }
+  .m-sponsor.avenue {
+    width: 18%;
   }
   .m-sponsor-partner {
     width: 16.666%;
   }
   .m-sponsor-partner.wedeploy {
-    width: 17%;
+    width: 16.5%;
+    margin-top: 4px;
   }
   .m-sponsor-partner.bunee {
     width: 14%;
   }
   .m-sponsor-partner.braziljs {
-    width: 10%;
+    width: 12%;
   }
   .m-sponsor-partner.zeit {
     width: 9%;
@@ -1478,16 +1546,16 @@ a {
 
 @media (max-width: 767px) {
   .m-sponsor-partner.wedeploy {
-    width: 22%;
+    width: 20%;
   }
   .m-sponsor-partner.bunee {
-    width: 19%;
+    width: 16%;
   }
   .m-sponsor-partner.braziljs {
-    width: 14%;
+    width: 12%;
   }
   .m-sponsor-partner.zeit {
-    width: 12%;
+    width: 10.5%;
   }
 }
 
@@ -1632,11 +1700,6 @@ a {
     margin-bottom: 40px;
   }
   .m-sponsor-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1647,21 +1710,41 @@ a {
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .m-sponsor-gold {
+  .m-sponsor {
     width: 55%;
     padding-right: 20px;
+  }
+  .m-sponsor.toptal {
+    width: 43%;
+    padding-bottom: 0px;
+  }
+  .m-sponsor.loadsmart {
+    width: 100%;
+  }
+  .m-sponsor.sympla {
+    width: 55%;
+  }
+  .m-sponsor.vtex {
+    width: 60%;
+  }
+  .m-sponsor.hotmart {
+    width: 90%;
+  }
+  .m-sponsor.avenue {
+    width: 40%;
   }
   .m-sponsor-partner {
     margin-bottom: 25px;
   }
   .m-sponsor-partner.wedeploy {
-    width: 40%;
+    width: 35%;
+    margin-top: 5px;
   }
   .m-sponsor-partner.bunee {
-    width: 32%;
+    width: 30%;
   }
   .m-sponsor-partner.braziljs {
-    width: 25%;
+    width: 22%;
   }
   .m-sponsor-partner.zeit {
     width: 20%;
