@@ -226,9 +226,6 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
 }
-a:focus {
-  outline: 0;
-}
 blockquote {
   margin: 0 0 10px 0;
   padding: 10px 20px;
@@ -960,9 +957,6 @@ textarea.w-select {
   display: inline-block;
   cursor: pointer;
   padding-right: 40px;
-}
-.w-dropdown-toggle:focus {
-  outline: 0;
 }
 .w-icon-dropdown-toggle {
   position: absolute;
