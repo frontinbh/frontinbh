@@ -1081,6 +1081,9 @@ a {
 .sponsor.toptal {
   width: 12%;
 }
+.sponsor.sonaticos {
+  width: 12%;
+}
 
 .sponsor.avenue {
   width: 10.5%;
@@ -1501,6 +1504,9 @@ a {
   .m-sponsor.toptal {
     width: 21%;
   }
+  .m-sponsor.sonaticos {
+    width: 21%;
+  }
   .m-sponsor.loadsmart {
     width: 42%;
   }
@@ -1715,6 +1721,10 @@ a {
     padding-right: 20px;
   }
   .m-sponsor.toptal {
+    width: 43%;
+    padding-bottom: 0px;
+  }
+  .m-sponsor.sonaticos {
     width: 43%;
     padding-bottom: 0px;
   }
