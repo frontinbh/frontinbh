@@ -826,9 +826,10 @@ a {
   display: none;
   width: 100%;
   height: 100%;
-  padding: 5vh;
-  background-image: -webkit-linear-gradient(270deg, #000, transparent 50%), url('../images/about.jpg');
-  background-image: linear-gradient(180deg, #000, transparent 50%), url('../images/about.jpg');
+  padding: 10vh 5vh 5vh;
+  background-color: #000;
+  background-image: -webkit-linear-gradient(270deg, #000, transparent 75%), url('../images/about.jpg');
+  background-image: linear-gradient(180deg, #000, transparent 75%), url('../images/about.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -869,7 +870,7 @@ a {
 
 .m-header {
   position: relative;
-  z-index: 100;
+  z-index: 10000;
   margin-bottom: 40px;
   padding: 40px;
   -webkit-box-pack: start;
@@ -1036,6 +1037,7 @@ a {
   left: 0px;
   top: 0px;
   right: 0px;
+  z-index: 1000;
   padding-top: 40px;
   padding-right: 40px;
   padding-left: 40px;
@@ -1079,30 +1081,31 @@ a {
 }
 
 .sponsor.toptal {
-  width: 12%;
-}
-.sponsor.sonaticos {
-  width: 12%;
+  width: 14%;
 }
 
 .sponsor.avenue {
-  width: 10.5%;
+  width: 12.5%;
 }
 
 .sponsor.hotmart {
-  width: 30%;
+  width: 33%;
 }
 
 .sponsor.loadsmart {
-  width: 30%;
+  width: 17%;
 }
 
 .sponsor.vtex {
-  width: 23%;
+  width: 26%;
 }
 
 .sponsor.sympla {
-  width: 16%;
+  width: 19.5%;
+}
+
+.sponsor.sonaticos {
+  width: 7%;
 }
 
 .sponsor-wrapper {
@@ -1160,21 +1163,25 @@ a {
 }
 
 .sponsor-partner.wedeploy {
-  width: 8%;
+  width: 8.5%;
   margin-top: 0.5%;
 }
 
 .sponsor-partner.bunee {
-  width: 7%;
+  width: 7.5%;
 }
 
 .sponsor-partner.braziljs {
-  width: 5%;
+  width: 5.5%;
 }
 
 .sponsor-partner.zeit {
   width: 35px;
   margin-right: 0px;
+}
+
+.sponsor-partner.sonaticos {
+  width: 5%;
 }
 
 .section-organizer {
@@ -1482,6 +1489,50 @@ a {
   background-color: #5c00d8;
 }
 
+.speaker-pic-10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/marco.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speaker-content-10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  max-height: 660px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 5vh;
+  padding-left: 5vh;
+}
+
+.speaker-preview-10 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/marco.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 991px) {
   .m-header {
     display: -webkit-box;
@@ -1504,11 +1555,8 @@ a {
   .m-sponsor.toptal {
     width: 21%;
   }
-  .m-sponsor.sonaticos {
-    width: 21%;
-  }
   .m-sponsor.loadsmart {
-    width: 42%;
+    width: 22%;
   }
   .m-sponsor.sympla {
     width: 27%;
@@ -1522,6 +1570,9 @@ a {
   .m-sponsor.avenue {
     width: 18%;
   }
+  .m-sponsor.sonaticos {
+    width: 12%;
+  }
   .m-sponsor-partner {
     width: 16.666%;
   }
@@ -1533,10 +1584,13 @@ a {
     width: 14%;
   }
   .m-sponsor-partner.braziljs {
-    width: 12%;
+    width: 11%;
   }
   .m-sponsor-partner.zeit {
     width: 9%;
+  }
+  .m-sponsor-partner.sonaticos {
+    width: 11%;
   }
   .m-info-text {
     font-size: 0.85em;
@@ -1721,10 +1775,6 @@ a {
     padding-right: 20px;
   }
   .m-sponsor.toptal {
-    width: 43%;
-    padding-bottom: 0px;
-  }
-  .m-sponsor.sonaticos {
     width: 43%;
     padding-bottom: 0px;
   }
