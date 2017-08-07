@@ -1708,8 +1708,6 @@ a {
 
 @media (max-width: 479px) {
   .m-header {
-    position: relative;
-    z-index: 100;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
