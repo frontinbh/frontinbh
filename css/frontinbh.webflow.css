@@ -542,8 +542,8 @@ a {
   margin-bottom: 0px;
   font-family: 'Itcavantgardepro xlt', sans-serif;
   color: #ff5c4d;
-  font-size: 8.5vh;
-  line-height: 7.5vh;
+  font-size: 8vh;
+  line-height: 7vh;
   font-weight: 200;
   letter-spacing: -0.06em;
 }
@@ -553,8 +553,8 @@ a {
   margin-bottom: 0px;
   font-family: 'Itcavantgardepro demi', sans-serif;
   color: #ff5c4d;
-  font-size: 8.5vh;
-  line-height: 7.5vh;
+  font-size: 8vh;
+  line-height: 7vh;
   font-weight: 600;
   letter-spacing: -0.03em;
 }
@@ -575,8 +575,6 @@ a {
 .speaker-description {
   width: 100%;
   max-width: 700px;
-  margin-top: 90px;
-  margin-bottom: 20px;
 }
 
 .speaker-menu {
@@ -1705,6 +1703,20 @@ a {
   height: 100%;
 }
 
+.description-title {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 40px;
+  color: #ff5c4d;
+  text-transform: uppercase;
+}
+
+.m-talk {
+  margin-bottom: 0px;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+
 @media (max-width: 991px) {
   .m-header {
     display: -webkit-box;
@@ -1791,6 +1803,9 @@ a {
     border-bottom: 1px solid #5c00d8;
     color: #ff5c4d;
     font-size: 1em;
+  }
+  .m-talk {
+    margin-top: 10px;
   }
 }
 
@@ -2016,6 +2031,11 @@ a {
     width: 35%;
   }
   .m-time {
+    margin-bottom: 0px;
+    font-size: 0.85em;
+    line-height: 1.5em;
+  }
+  .m-talk {
     margin-bottom: 0px;
     font-size: 0.85em;
     line-height: 1.5em;
